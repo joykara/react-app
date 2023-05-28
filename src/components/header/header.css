@@ -1,0 +1,99 @@
+.header{
+    display: flex;
+    /* linear background */
+    background: linear-gradient(45deg, rgba(9, 9, 59, 0.912) 50%, rgb(52, 52, 246) 100%);
+    box-shadow: inset 0px 40px 25px  #0c1229e6,
+                    -10px -120px 35px 5px #0c1229e6;
+}
+.header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #fff;
+    margin-right: 5rem;
+}
+.header-content h1{
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing:  -0.04rem;
+    padding-top: 4rem;
+}
+.header-content p{
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 1.5rem;
+}
+.header-content__button{
+    display: flex;
+    margin-top: 1.2rem;
+}
+.header-content__button button{
+    cursor: pointer;
+    outline: none;
+    background: none;
+    color: #fff;
+    padding-right: 0.5rem;
+    font-size: 20px;
+    font: bold;
+    border: none;
+}
+.header-content__button button:hover{
+    color: #3489ff;
+}
+.header-content__button button .arrow{
+    color: #3489ff;
+    margin-top: auto;
+}
+.header-content__button button span:hover{
+    /* scale right */
+    transform: translateX(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.header-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+
+@media screen and (max-width: 1050px){
+    .header{
+        flex-direction: column;
+    }
+    .header-content{
+        margin: 0 0 0 3rem;
+    }
+}
+@media screen and (max-width: 650px){
+    .header h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .header p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .header-content__button button{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 490px){
+    .header h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .header-content__button button{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

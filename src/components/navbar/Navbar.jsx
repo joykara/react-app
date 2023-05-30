@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { RiMenuLine, RiCloseLine, RiSearchLine, RiArrowRightSLine } from 'react-icons/ri';
+import { RiMenuLine, RiCloseLine, RiSearchLine} from 'react-icons/ri';
 import './navbar.css'
 
 //create McKinsey & Company menu
@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="navbar__logo">
                 <button onClick={handleToggle}>
-                    {toggleMenu ? <RiCloseLine color="#fff" size={30} /> : <RiMenuLine color="#fff" size={30} />}
+                    {toggleMenu ? <RiCloseLine color="#fff" size={40} /> : <RiMenuLine color="#fff" size={30} />}
                 </button>
                 <p>McKinsey<br/> &nbsp; & Company</p>
             </div>

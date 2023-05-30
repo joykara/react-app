@@ -1,0 +1,48 @@
+*{
+    outline: none;
+    border: none;
+    list-style-type: none;
+}
+.hm-footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hm-footer{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.hm-logo{
+    padding: 10px 20px;
+    background: grey;
+    width: 140px;
+    margin-right: 10px;
+    font-size: 2rem;
+}
+.hm-footer-content{
+    display: flex;
+}
+.hm-email{
+    padding: 5px;
+    justify-content: left;
+}
+.hm-footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+.hm-footer-cta-links{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.hm-footer-cta-links li{
+    margin-right: auto;
+}
+.hm-footer-cta-social-links{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: auto;
+    padding-top: 20px;
+}
